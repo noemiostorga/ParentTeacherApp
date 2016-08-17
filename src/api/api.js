@@ -10,11 +10,11 @@ export function login(username, password) {
     });
 }
 
-export function getUser() {
-  api.get('/user').then(function(resp){
-    console.log(resp);
-  })
-}
+// export function getUser() {
+//   api.get('/user').then(function(resp){
+//     console.log(resp);
+//   })
+// }
 
 export function logout() {
   api.logout();

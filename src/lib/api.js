@@ -9,12 +9,12 @@ instance.new = function (url) {
   // this.defaults.headers = {'Content-Type' : 'application/x-www-form-urlencoded'};
 };
 
-instance.setTokenPath = function (path = '/token') {
+instance.setTokenPath = function (path = '/authtoken') {
   this.tokenPath = path;
 }
 
 instance.getTokenPath = function () {
-  return this.tokenPath || '/token';
+  return this.tokenPath || '/authtoken';
 }
 
 if (Cookie.get('token')) {
