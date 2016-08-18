@@ -4,8 +4,8 @@ import { login } from 'api/api';
 export default React.createClass({
 	getInitialState: function(){
 		return {
-			username:'',
-			password:''
+			username:'cesar',
+			password:'123'
 		}
 	},
 
@@ -16,15 +16,15 @@ export default React.createClass({
   },
   handleSubmit: function(e){
   	e.preventDefault();
-
+  	
   	login(this.state.username, this.state.password);
 
   },
   render: function () {
     return (
       <form onSubmit={this.handleSubmit}>
-      	<input placeholder="username" onChange={this.handleChange}/><br/>
-      	<input placeholder="password" onChange={this.handleChange}/><br/>
+      	<input placeholder="username" value={this.state.username} onChange={this.handleChange}/><br/>
+      	<input placeholder="password" value={this.state.password} onChange={this.handleChange}/><br/>
       	<button type="submit">Submit</button>
       </form>
     )

@@ -4,10 +4,7 @@ import api from 'lib/api';
 
 
 export function login(username, password) {
-  api.login(username, password)
-    .then(function(resp){
-      console.log(resp)
-    });
+  api.login(username, password);
 }
 
 // export function getUser() {

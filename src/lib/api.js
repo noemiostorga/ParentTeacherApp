@@ -29,6 +29,9 @@ instance.login = function(user, pass) {
   return this.post(this.getTokenPath(), {username: user, password:pass})
     .then(function(resp){
       var token = resp.data.token;
+
+      console.log('here it is ',resp);
+
       Cookie.set('token', token);
       this.interceptors.request.use(function(config){
         config.headers['Authorization'] = 'Token ' + token;
