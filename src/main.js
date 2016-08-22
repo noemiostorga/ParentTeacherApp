@@ -11,14 +11,16 @@ injectTapEventPlugin();
 
 // Layout
 
-import Form from 'layout/form.js'
+import Form from 'layout/form.js';
 
 // UI
+import Home from 'layout/home.js';
 
 const Site = (
   
     <Router history={hashHistory}>
         <Route path="/" component={Form}/>
+        <Route path="/home" component={Home}/>
     </Router>
  
 );
