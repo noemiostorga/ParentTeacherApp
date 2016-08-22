@@ -12,9 +12,9 @@ injectTapEventPlugin();
 // Layout
 
 import Form from 'layout/form.js';
-
-// UI
 import Home from 'layout/home.js';
+// UI
+
 
 const Site = (
   
