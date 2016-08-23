@@ -12,7 +12,8 @@ injectTapEventPlugin();
 // Layout
 
 import Form from 'layout/form.js';
-import Home from 'layout/home.js';
+import ParentView from 'ui/parentView.js';
+import TeacherView from 'ui/teacherView.js';
 // UI
 
 
@@ -20,7 +21,8 @@ const Site = (
   
     <Router history={hashHistory}>
         <Route path="/" component={Form}/>
-        <Route path="/home" component={Home}/>
+        <Route path="/parent" component={ParentView}/>
+        <Route path="/teacher" component={TeacherView}/>
     </Router>
  
 );
