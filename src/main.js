@@ -12,8 +12,8 @@ injectTapEventPlugin();
 // Layout
 
 import Form from 'layout/form.js';
-import ParentView from 'ui/parentView.js';
-import TeacherView from 'ui/teacherView.js';
+import ParentView from 'layout/ParentView.js';
+import TeacherView from 'layout/TeacherView.js';
 // UI
 
 
